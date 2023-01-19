@@ -1,0 +1,11 @@
+C:\Dataanalysis_tool_OP\
+0650
+2204
+C:\Users\shuvomdu\OneDrive - Intel Corporation\Desktop\Client\RPL\IDV XML\RPL_B0_LITE_0950.idvp.xml
+RPL_B1_new_lappy_Ituff_windows11v9
+statistics
+median
+RPL_B1_CB_Test_PY
+350500Y00
+D1C
+132332

@@ -1,0 +1,18 @@
+median
+D101850A4
+D1D
+.*IDV.*650.*
+empty
+6
+2
+5
+4
+D101850A4
+D1D
+.*FULLDIE.*650.*
+empty
+6
+2
+5
+CB or File
+CB or File for ref

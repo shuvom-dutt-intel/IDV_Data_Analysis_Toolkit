@@ -1,0 +1,9 @@
+C:\Users\kevinrei\OneDrive - Intel Corporation\Documents\Creativity\SICC_Data_Analysis\Results\
+ADLP282_Q0_VCC_DE_MV_132323_rev02
+D1D
+
+
+132323
+4215H0V00
+ADL%
+I:\program\1274\eng\hdmtprogs\adl_sds\TestProgram\ADLEBJX40M1214KR\
