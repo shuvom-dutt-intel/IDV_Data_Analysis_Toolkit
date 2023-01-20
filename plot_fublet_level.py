@@ -13,10 +13,11 @@ from subprocess import call
 def plot_fublet_level(step_stepappend, xmlidv_chains, plot_type, osc, pdf, reportfile, limits, statistics):
     print("\n\n###############################################################################################")
     print("###############################################################################################")
-    print("Oscillator: " + str(osc))
+    oscstrip=osc.lstrip("0")#Strips out any leading zeros from input OSC value
+    print("Oscillator: " + str(oscstrip))
 
     reportfile.write("###############################################################################################")
-    reportfile.write("\nOscillator: " + str(osc))
+    reportfile.write("\nOscillator: " + str(oscstrip))
 
     #print(str(step_stepappend[0].lco.location)+str(step_stepappend[0].name))
     output_file = [str(step.lco.location)+str(step.name) for step in step_stepappend]
@@ -43,7 +44,7 @@ def plot_fublet_level(step_stepappend, xmlidv_chains, plot_type, osc, pdf, repor
         output_cb = open(file, 'r')
         i = 0
         for line in output_cb:
-            if (not (i == 0 or line == "\n" or line == "")) and (line.split()[6] == str(osc)):  ### added here  and (line.split()[6] == str(osc)) so we can take all data at once from CB, which should be way shorter, and filter here then
+            if (not (i == 0 or line == "\n" or line == "")) and (line.split()[6] == str(oscstrip)):  ### added here  and (line.split()[6] == str(osc)) so we can take all data at once from CB, which should be way shorter, and filter here then
                 m += 1
                 ariesnum = int(line.split()[5])
                 for j in range(len(xmlidv_chains)):
