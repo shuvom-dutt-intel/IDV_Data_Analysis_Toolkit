@@ -1,2 +1,3 @@
+C:\Users\daithiby\CrystalBall\Beta\CBCLI.exe
 C:\Users\daithiby\CrystalBall\Production\CBCLI.exe
 C:\Users\daithiby\CrystalBall\Prototype\CBCLI.exe

@@ -13,11 +13,20 @@ def linereturn(file,match):
         return(linearray)
 
 def cbilocator():
-    if not os.path.isfile("cbcli_loc.txt"):
+    un = os.getlogin()# calls username from user
+    path="C:\\Users\\%s\\CrystalBall\\Production\\Cry"%un #adds usernameto user crystalball location
+    exists=os.path.exists(path)#check if path exists
+    if  exists== True:
+        print(exists)
+        cbloc ="C:\\Users\\%s\\CrystalBall\\Production\\CBCLI.exe"%un
+        print ("CB location: ", cbloc)
+    else:#If the path doenst exist pulls the .bat script to find where the exe lives 
         subprocess.call("cbcli_locator.bat", shell=True)
-    cbloc = linereturn('cbcli_loc.txt','Production')[0]
-    print("CB location: ", cbloc)
-    return cbloc
+        cbloc = linereturn('cbcli_loc.txt','Production')[0]
+        print("CB location: ", cbloc)
+        print(cbloc)
+    return (cbloc)
+    
 
 
 class xmlitem:
