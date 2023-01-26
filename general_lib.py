@@ -14,7 +14,7 @@ def linereturn(file,match):
 
 def cbilocator():
     un = os.getlogin()# calls username from user
-    path="C:\\Users\\%s\\CrystalBall\\Production\\Cry"%un #adds usernameto user crystalball location
+    path="C:\\Users\\%s\\CrystalBall\\Production"%un #adds usernameto user crystalball location
     exists=os.path.exists(path)#check if path exists
     if  exists== True:
         print(exists)
