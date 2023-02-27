@@ -1,2 +1,6 @@
 *.pyc
 *.pyo
+/.vs/IDV_Data_Analysis_Toolkit/FileContentIndex
+/.vs/slnx.sqlite
+/.vs/VSWorkspaceState.json
+/defaults_IDV.txt
