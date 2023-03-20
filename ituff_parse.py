@@ -45,7 +45,7 @@ def ituff_data(stepobject):# necessary inputs: ituff, corner, osc_vector, output
                     output_file.write(str(REGEX)+"\t"+str(LOT)+"\t"+str(WAFER)+"\t"+str(X)+"\t"+str(Y)+"\t"+str(FUBLET)+"\t"+str(osc)+"\t"+str(OVERFLOW)+"\t"+str(fub_freq.group(2))+"\n")
                 if re.match( ".*"+str(REGEX)+".*", line):
                     linestatus = 1
-                if linestatus == 1 and re.match(".*vccp_" + str(corner) + ".*", line):
+                if linestatus == 1 and re.match(".*tname_IDV_FULL_X_E_START_X_X_X_X_" + str(corner) + ".*", line):
                     linestatus = 2
                 if linestatus == 2 and re.match(".*category_" + str(osc) + "$", line):
                     linestatus = 3
